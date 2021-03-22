@@ -1,0 +1,494 @@
+/* CSS Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+body {
+  width: 100vw;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.3;
+}
+
+body {
+  width: 100vw;
+}
+
+/* Variables */
+
+:root {
+  --primary-text-color: #333;
+  --text-color: rgb(102, 102, 102);
+  --secondary-text-color: #1d1d1f;
+  --primary-color: #0071E3;
+  --secondary-color: #fff;
+  --primary-bg-color: #fbfbfdc0;
+  --secondary-bg-color: black;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: rgb(190, 190, 190);
+  padding: 10px;
+  /* margin: 0 30px; */
+  font-size: 13px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 65%;
+}
+
+.nav-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12%;
+}
+
+.navbar i {
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
+/* Covid-19 Message */
+
+.covid {
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 13px;
+  padding: 15px 0;
+  margin-top: 45px;
+}
+
+.covid a {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.covid span:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* Shop Online */
+.shop-online {
+  background-color: rgba(240, 240, 240, 0.836);
+  padding: 15px 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+.shop-online a {
+  color: var(--primary-color);
+}
+
+.shop-online a:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* iPhone 12 */
+.iphone-12 {
+  height: 580px;
+  overflow: hidden;
+  text-align: center;
+  padding: 50px;
+  cursor: pointer;
+  background-color: var(--primary-bg-color);
+  margin-bottom: 10px;
+}
+
+.iphone-12 h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.iphone-12 p {
+  color: var(--text-color);
+  padding: 10px 0;
+}
+
+.iphone12-fig {
+  width: 100%;
+}
+
+.iphone-12 img {
+  width: 650px;
+  margin: 20px auto;
+}
+
+/* iPhone 12 Pro */
+.iphone-12-pro {
+  background-color: var(--secondary-bg-color);
+}
+
+.iphone-12-pro h1,
+.iphone-12-pro h2 {
+  color: var(--secondary-color);
+}
+
+.iphone-12-pro a {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.iphone-12-pro img {
+  z-index: -1;
+}
+
+/* iPad Air */
+.ipad-air {
+  height: 600px;
+}
+
+.ipad-air h2 {
+  font-weight: normal;
+  margin-bottom: 10px;
+} 
+
+.ipad-air-fig {
+  margin: 20px 0;
+}
+
+/* Apple Watch */
+
+.watch {
+  background-color: var(--secondary-bg-color);
+  color: rgba(240, 240, 240, 0.945);
+}
+
+.watch .apple-logo {
+  color: rgba(240, 240, 240, 0.945);
+}
+
+.watch h1 {
+  font-size: 2rem;
+}
+
+.watch h4 {
+  color: rgb(158, 12, 12);
+  margin: 1px 0 8px;
+}
+
+.watch p {
+  font-size: 20px;
+}
+
+.watch img {
+  height: 350px;
+  margin-top: 1rem;
+}
+
+/* Fitness */
+
+.fitness {
+  color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
+  overflow: hidden;
+  position: relative;
+}
+
+.fitness img {
+  height: 350px;
+  position: absolute;
+  right: 0;
+  left: 10%;
+  margin-top: 30px;
+}
+
+.fitness .apple-logo {
+  color: var(--secondary-bg-color);
+}
+
+.fitness h1 {
+  font-size: 2.3rem;
+  font-weight: 550;
+  margin: 25px 0 5px;
+}
+
+/* AirPods */
+
+.airpods {
+  position: relative;
+  color: white;
+}
+
+.airpods::before {
+  content: '';
+  background: url('../images/airpods.jpg') center/cover;
+  position: absolute;
+  height: 578px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: brightness(70%) blur(0.5px);
+}
+
+.airpods h1 {
+  margin: 25px 0 0;
+  font-size: 2.3rem;
+}
+
+.airpods .apple-logo {
+  color: white;
+}
+
+/* Services */
+.services {
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-text-color);
+}
+
+.services .apple-logo {
+  color:  var(--secondary-text-color);
+}
+
+.services h1 {
+  margin: 25px 0 5px;
+  font-size: 2.3rem;
+}
+
+.services-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+}
+
+.services-icons img {
+  height: 100px;
+  box-shadow: 20px 5px 15px 2px rgba(73, 73, 73, 0.26);
+  margin-top: 30px;
+  border-radius: 20%;
+}
+
+.services-icons .tv img {
+  height: 103px;
+}
+
+/* Card */
+
+.icard {
+  position: relative;
+  background-color: #b3b3b3;
+}
+
+.icard h1 {
+  margin: 25px 0 5px;
+  font-size: 2.3rem;
+}
+.icard .terms {
+  font-size: 12px;
+}
+
+.icard .apple-logo {
+  color: black;
+}
+
+.icard::before {
+  content: '';
+  background: url('../images/applecard.jpg') no-repeat;
+  position: absolute;
+  height: 578px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin-top: 220px;
+  filter: brightness(70%) blur(0.5px);
+}
+
+/* Films */
+
+.films {
+  position: relative;
+  color: var(--secondary-color);
+  height: 578px;
+}
+
+.films .card {
+  padding: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 30%, transparent 70%);
+  z-index: 2;
+}
+
+.films .apple-films {
+  display: flex;
+  position: relative;
+  top: 0;
+  height: 578px;
+}
+
+.films img{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+
+.greyhound img {
+  z-index: -22;
+}
+
+.wolfwalker img {
+  left: 50%;
+  z-index: -22;
+}
+
+.films .original-films {
+  position: absolute;
+  top: 400px;
+  width: 554.8px;
+  bottom: 10px;
+  z-index: 200;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.films h1 {
+  display: block;
+}
+
+.films h1:first-child {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  color: var(--primary-bg-color);
+}
+
+.films h1:nth-child(2) {
+  margin-top: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: rgb(243, 243, 243);
+}
+
+.films a,
+.films i {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Tablets and under */
+
+@media (max-width: 1080px) {
+.nav {
+  width: 100%;
+}
+
+  .navbar ul {
+    width: 100%;
+  }
+
+  .iphone-12 h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 150px;
+  }
+
+  .nav {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .covid {
+    margin-top: 150px;
+  }
+
+  .iphone-12 {
+    padding: 30px;
+  }
+}
+
+  @media (max-width:734px) {
+
+  .iphone-12 img {
+    width: 450px;
+  }
+
+  .iphone-12-pro img {
+    margin-top: 40px;
+  }
+
+  .iphone-12-pro,
+  .ipad-air {
+    height: 550px;
+  }
+
+  .iphone-12 h1{
+    font-size: 2rem;
+  }
+
+  .iphone-12 p {
+    font-size: 0.8rem;
+  }
+
+  .iphone-12 h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .nav-items {
+    width: 20%;
+  }
+  
+  .iphone-12 img {
+    width: 300px;
+  }
+
+  .ipad-air,
+  .iphone-12-pro {
+    height: 450px;
+  }
+}
+
+
